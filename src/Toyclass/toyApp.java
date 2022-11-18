@@ -9,6 +9,9 @@ public class toyApp {
 		toy1.chooselightSaber();
 		toy1.printData();
 		
+		System.out.println(Math.ceil(2.6));
+		
+		System.out.println(Math.max(2,6));
 	}
 
 }
