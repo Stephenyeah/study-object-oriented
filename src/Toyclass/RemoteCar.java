@@ -1,8 +1,6 @@
 package Toyclass;
 
 public class RemoteCar {
-
-	
 	
 
 }

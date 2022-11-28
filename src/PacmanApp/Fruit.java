@@ -12,6 +12,7 @@ class Fruit
 	public void disappear()
 	{
 		isVisible =false;
+		System.out.println("Fruit is hidden");
 	}
 	
 	

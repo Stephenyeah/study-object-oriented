@@ -1,7 +1,8 @@
 package PacmanApp;
 
-public class Pacman {
+class Pacman {
 	public int points;
+	private int lives=3;
 	
 	public Pacman()
 	{
@@ -16,6 +17,12 @@ public class Pacman {
 	{
 		System.out.println("Pac-Man ate fruit");
 		eatenFruit.disappear();
+	}
+	public void  decreaseLives()
+	{
+		lives--;
+		System.out.print("Pac-Man is eaten");
+		
 	}
 
 }
