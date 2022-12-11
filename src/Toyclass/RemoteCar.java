@@ -1,16 +1,13 @@
 package Toyclass;
 
-public class RemoteCar {
-	
 
-}
 
-class remoteCar extends Toy{
+class RemoteCar extends Toy{
 	private String frequency;
 	private String carName;
 	
 
-	public  remoteCar() {
+	public  RemoteCar() {
 		
 	}
 	
