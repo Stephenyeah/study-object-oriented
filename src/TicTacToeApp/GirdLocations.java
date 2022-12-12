@@ -7,7 +7,7 @@ interface GirdLocations {
 		char symbol = 'X';
 		if(player.playername.equals("player1")) {
 			symbol ='X';
-			
+			player.player1Postions.add(girdlocation);
 			
 		}else if (player.playername.equals("player2")) {
 			symbol = 'O';

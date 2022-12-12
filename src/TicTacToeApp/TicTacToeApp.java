@@ -26,16 +26,16 @@ public class TicTacToeApp {
 			    System.out.println("Position taken! Eneter a correct Positon");
 			    girdlocation =in.nextInt();
 		
-			}
-			System.out.println(girdlocation);			
+			}					
+					
 			GirdLocations.setgirdlocation(gameboard.gameBoard, girdlocation, player1);
-			player1.player1Postions.add(girdlocation);
 			//check the winner			
 			String result = player1.checkWinner();
 			if(result.length()>0) {
 				System.out.println(result);
 				break;
 			}
+		
 				
 			//player2 enter
 			int girdlocation1 = in.nextInt();
@@ -46,8 +46,8 @@ public class TicTacToeApp {
 			    girdlocation1 =in.nextInt();
 		
 			}			
+			
 			GirdLocations.setgirdlocation(gameboard.gameBoard, girdlocation1, player2);
-			player2.player2Postions.add(girdlocation1);
              //check the winner
 			 result = player2.checkWinner();			
 			if(result.length()>0) {

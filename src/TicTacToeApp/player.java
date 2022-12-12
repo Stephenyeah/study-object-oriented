@@ -6,9 +6,18 @@ import java.util.List;
 
 class player {
       ArrayList<Integer> player1Postions = new ArrayList<Integer>();
-      ArrayList<Integer> player2Postions = new ArrayList<Integer>();
+      public void setPlayer1Postions(ArrayList<Integer> player1Postions) {
+		this.player1Postions = player1Postions;
+	}
+
+	public void setPlayer2Postions(ArrayList<Integer> player2Postions) {
+		this.player2Postions = player2Postions;
+	}
+
+	ArrayList<Integer> player2Postions = new ArrayList<Integer>();
 	public String playername;
 	public player() {
+		
 	
 	}
 	
@@ -25,7 +34,7 @@ class player {
 		List rightRow = Arrays.asList(3,6,9);
 		List cross1 = Arrays.asList(1,5,9);
 		List cross2 = Arrays.asList(7,5,3);
-		List cross3 = Arrays.asList(7,5,3);
+
 		
 		List<List> winning = new ArrayList<List>();
 		winning.add(topRow);
@@ -36,21 +45,22 @@ class player {
 		winning.add(rightRow);
 		winning.add(cross1);
 		winning.add(cross2);
-		winning.add(cross3);
-
-				
+		
+		
+		
+		int i;				
 		for(List result :winning) {
 			if(player1Postions.containsAll(result)){
-				return "Congratualations player1 won!";			
+				return "Congratualations player1 won! '0' ";			
 			}else if(player2Postions.containsAll(result)) {
-				return "Congratualations player2 won! Player2 is more clever.";				
-		    }
+				return "Congratualations player2 won! (: ";				
+		    }		 
+		
 	
 		}
-		if(player1Postions.size()+ player2Postions.size() ==9) {
-			return "CAT TIE ！";	
+		if(player1Postions.size() == 5) {
+			return "CAT TIE !!!";	
 		}
-
 
 				
 		return "";
